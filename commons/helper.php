@@ -5,7 +5,7 @@ if (!function_exists('require_file')) {
         $files = array_diff(scandir($pathFolder), ['.', '..']);
 
         foreach($files as $file) {
-            require_once $pathFolder .'/'. $file;
+            require_once $pathFolder . $file;
         }
     }
 }
