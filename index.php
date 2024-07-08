@@ -13,5 +13,5 @@ $act = $_GET['act'] ?? '/';
 
 match ($act) {
     
-}
+};
 require_once "./commons/disconnect-db.php";
