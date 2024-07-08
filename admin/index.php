@@ -13,8 +13,15 @@ require_file(PATH_MODEL_ADMIN);
 //Điều hướng act
 $act = $_GET['act'] ?? '/';
 
+// Kiểm tra xem user đã đăng nhập chưa
+// middleware_auth_check($act);
+
 match ($act) {
     '/' => dashboard(),
+
+    // Login
+    'login' => authenShowFormLogin(),
+    'logout' => authenLogout(),
 };
 
 require_once "../commons/disconnect-db.php";
