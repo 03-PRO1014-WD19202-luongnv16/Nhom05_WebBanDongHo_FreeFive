@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //commons
 require_once "../commons/env.example.php";
 require_once "../commons/helper.php";
@@ -14,7 +14,7 @@ require_file(PATH_MODEL_ADMIN);
 $act = $_GET['act'] ?? '/';
 
 // Kiểm tra xem user đã đăng nhập chưa
-// middleware_auth_check($act);
+middleware_auth_check($act);
 
 match ($act) {
     '/' => dashboard(),
@@ -29,6 +29,13 @@ match ($act) {
     'user-create' => userCreate(),
     'user-update' => userUpdate($_GET['id']),
     'user-delete' => userDelete($_GET['id']),
+
+    // CRUD Category
+    'categories' => categoryListAll(),
+    'category-detail' => categoryShowOne($_GET['id']),
+    'category-create' => categoryCreate(),
+    'category-update' => categoryUpdate($_GET['id']),
+    'category-delete' => categoryDelete($_GET['id']),
 };
 
 require_once "../commons/disconnect-db.php";

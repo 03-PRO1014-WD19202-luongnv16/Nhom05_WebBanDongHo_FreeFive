@@ -40,6 +40,18 @@
         </div>
     </li>
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+            <i class="fab fa-apple"></i>
+            <span>Quản lý Category</span>
+        </a>
+        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=categories">Danh sách</a>
+                <a class="collapse-item" href="<?= BASE_URL_ADMIN ?>?act=category-create">Thêm mới</a>
+            </div>
+        </div>
+    </li>
     <!-- Nav Item - Utilities Collapse Menu -->
     
 
