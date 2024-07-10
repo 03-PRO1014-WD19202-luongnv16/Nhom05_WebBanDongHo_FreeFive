@@ -17,3 +17,4 @@ define('DB_NAME',       'freefive');
 //url
 define('BASE_URL', 'http://localhost/Nhom05_WebBanDongHo_FreeFive/');
 define('BASE_URL_ADMIN', 'http://localhost/Nhom05_WebBanDongHo_FreeFive/admin/');
+
