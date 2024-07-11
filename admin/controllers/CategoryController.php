@@ -2,7 +2,7 @@
 
 function categoryListAll()
 {
-    $title = 'Danh sách category';
+    $title = 'Danh sách Danh mục';
     $view = 'categories/index';
     $script = 'datatable';
     $script2 = 'categories/script';

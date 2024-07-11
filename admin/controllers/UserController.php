@@ -2,7 +2,7 @@
 
 function userListAll()
 {
-    $title = 'Danh sách User';
+    $title = 'Danh sách Người dùng';
     $view = 'users/index';
     $script = 'datatable';
     $script2 = 'users/script';
