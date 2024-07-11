@@ -114,3 +114,19 @@ if (!function_exists('update')) {
         }
     }
 }
+
+if (!function_exists('delete2')) {
+    function delete2($tableName, $id) {
+        try {
+            $sql = "DELETE FROM $tableName WHERE id = :id";
+            
+            $stmt = $GLOBALS['conn']->prepare($sql);
+
+            $stmt->bindParam(":id", $id);
+
+            $stmt->execute();
+        } catch (\Exception $e) {
+            debug($e);
+        }
+    }
+}

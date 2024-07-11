@@ -14,6 +14,7 @@ define('DB_PORT',       '3306');
 define('DB_USERNAME',   'root');
 define('DB_PASSWORD',   '');
 define('DB_NAME',       'freefive');
+
 //url
 define('BASE_URL', 'http://localhost/Nhom05_WebBanDongHo_FreeFive/');
 define('BASE_URL_ADMIN', 'http://localhost/Nhom05_WebBanDongHo_FreeFive/admin/');
