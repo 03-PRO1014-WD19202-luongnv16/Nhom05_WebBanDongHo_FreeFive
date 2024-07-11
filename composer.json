@@ -1,0 +1,15 @@
+{
+    "name": "admin/nhom05_web-ban-dong-ho_free-five",
+    "autoload": {
+        "psr-4": {
+            "Admin\\Nhom05WebBanDongHoFreeFive\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "duongtruong2",
+            "email": "truongdz2903@gmail.com"
+        }
+    ],
+    "require": {}
+}
